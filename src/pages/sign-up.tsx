@@ -18,7 +18,7 @@ interface UserLoginData {
   password_confirmation: string;
 }
 
-export default function signUp() {
+export default function SignUp() {
   const router = useRouter();
 
   const emailAlreadyExistsToastNotification = () =>

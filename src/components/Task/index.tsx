@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Input } from "../Form/Input";
-import { MdDelete, MdEdit, Md1XMobiledata, MdEditOff } from "react-icons/md";
+import { MdDelete, MdEdit, MdEditOff } from "react-icons/md";
 import { isKeyPressed } from "../../utils/isKeyPressed";
 import styles from "./styles.module.css";
 
@@ -18,7 +18,7 @@ interface TaskProps {
 }
 
 export function Task({ task, deleteTask, updateTask }: TaskProps) {
-  const { id_task, name, description, isDone } = task;
+  const { name } = task;
 
   const [taskTitle, setTaskTitle] = useState("");
   const [isEditingTitle, setIsEditingTitle] = useState(false);

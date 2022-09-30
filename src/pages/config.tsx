@@ -22,6 +22,8 @@ interface UserConfigTimer {
 }
 
 export default function Config() {
+  const { user } = useAuth();
+
   const [initialTimePomodoro, setInitialTimePomodoro] = useState<string[]>([
     "00",
     "00",
@@ -37,8 +39,6 @@ export default function Config() {
     "00",
     "00",
   ]);
-
-  const { user } = useAuth();
 
   const userNotExists = () =>
     toast.error("Houve um erro ao atualizar o relógio, tente novamente.");
@@ -97,7 +97,9 @@ export default function Config() {
 
     try {
       getUserTimePreferences();
-    } catch {}
+    } catch {
+      throw new Error();
+    }
   }, []);
 
   useEffect(() => {

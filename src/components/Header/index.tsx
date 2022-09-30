@@ -13,7 +13,12 @@ export function Header() {
       <div className={styles.logo}>
         <Link href="/">
           <a>
-            <Image src={pomotaskLightLogo} width={80} height={80} />
+            <Image
+              src={pomotaskLightLogo}
+              alt="Icone Pomotask"
+              width={80}
+              height={80}
+            />
           </a>
         </Link>
         {user && (

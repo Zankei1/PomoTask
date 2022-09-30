@@ -77,7 +77,7 @@ export default function Home() {
     } catch {
       throw new Error();
     }
-  }, [isTasksChanged, user]);
+  }, [isTasksChanged, user, getTasks]);
 
   useEffect(() => {
     if (!isWide) {

@@ -118,7 +118,7 @@ export function Countdown({ selectedTab }: CountdownProps) {
   useEffect(() => {
     setInitialTime();
     stop();
-  }, [user, selectedTab]);
+  }, [user, selectedTab, setInitialTime]);
 
   const hour = String(time.hour).padStart(2, "0");
   const minute = String(time.minute).padStart(2, "0");

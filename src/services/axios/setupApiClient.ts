@@ -28,7 +28,7 @@ export function setupApiClient(ctx = undefined) {
     },
     (error) => {
       if (error.response.status == 401) {
-        if ((error.response.message = "Invalid token!")) {
+        if (error.response.message == "Invalid token!") {
           cookies = parseCookies(ctx);
           const { "PomoTask.refreshToken": refreshToken } = cookies;
           const originalConfig = error.config;

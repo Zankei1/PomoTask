@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Countdown } from "./Countdown";
-import { useMedia } from "../../hooks/useMedia";
 import { BsArrowRight } from "react-icons/bs";
 import * as Tabs from "@radix-ui/react-tabs";
 import styles from "./styles.module.css";
