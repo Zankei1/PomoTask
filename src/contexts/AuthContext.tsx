@@ -78,7 +78,7 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
         })
         .catch(signOut);
     }
-  }, [signOut]);
+  }, []);
 
   return (
     <AuthContext.Provider value={{ user, signIn, signOut }}>

@@ -58,7 +58,7 @@ export function Sidebar({
               <BsArrowLeft fontSize={26} />
             </button>
           </div>
-          <Link href="/login">
+          <Link href="login">
             <a className={styles.login}>
               Faça <span className={styles.underline}>login</span>
             </a>
