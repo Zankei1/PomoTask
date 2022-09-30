@@ -18,8 +18,5 @@
 
 .timerButtonsContainer {
   display: flex;
-}
-
-.timerButtons {
-  flex: 1;
+  justify-content: space-around;
 }
