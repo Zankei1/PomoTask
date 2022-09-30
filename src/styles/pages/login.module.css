@@ -1,0 +1,74 @@
+.container {
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.fieldContainer {
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.loginForm {
+  width: 50%;
+  border-radius: 0.6rem;
+  background-color: var(--foreground-color);
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginButton {
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  background-color: var(--text-color);
+  color: var(--foreground-color);
+  margin-top: 2rem;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.recoverPassword {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.recoverLink {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.contentDivider {
+  width: 90%;
+  border-top: 0.2rem solid var(--foreground-color);
+  margin-top: 1rem;
+}
+
+.socialLogin {
+  background-color: var(--foreground-color);
+  width: 50%;
+  border-radius: 0.6rem;
+  padding: 4rem;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

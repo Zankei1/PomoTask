@@ -1,0 +1,17 @@
+.container {
+  width: 3rem;
+  height: 3rem;
+  border: 6px solid var(--foreground-color);
+  border-top-color: var(--background-color);
+  border-radius: 50%;
+  animation: is-rotating 1s linear infinite;
+}
+
+@keyframes is-rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

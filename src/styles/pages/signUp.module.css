@@ -1,0 +1,61 @@
+.container {
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.formContainer {
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUpForm {
+  width: 50%;
+  border-radius: 0.6rem;
+  background-color: var(--foreground-color);
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentDivider {
+  width: 90%;
+  border-top: 0.2rem solid var(--foreground-color);
+  margin-top: 1rem;
+}
+
+.login {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login a {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.loginButton {
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  background-color: var(--text-color);
+  color: var(--foreground-color);
+  margin-top: 2rem;
+}

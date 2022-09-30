@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  font-size: 12rem;
+  margin-bottom: 2rem;
+  justify-self: flex-start;
+}
+
+.timerButtonsContainer {
+  display: flex;
+}
+
+.timerButtons {
+  flex: 1;
+}
